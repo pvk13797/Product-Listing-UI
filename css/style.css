@@ -158,6 +158,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .products_list aside > .brand_list li input{
     display: flex;
+    display: -webkit-flex;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

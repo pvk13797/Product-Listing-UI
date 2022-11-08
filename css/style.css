@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.linear_1 {
+    background: linear-gradient(85.59deg, #34642B 0%, #BCD539 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: rgba(33, 33, 33, 0.7) !important;
+    border: 2px solid #34642B!important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none!important;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+    background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#000 45%,#000 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, transparent 0%,transparent 43%,#000 45%,#000 55%,transparent 57%,transparent 100%);
+	cursor: pointer;
+}
+.our_products{
+    padding: 80px 0;
+}
+.our_products .container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.explore_products .title{
+    padding: 0 320px;
+}
+.explore_products .title h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    color: #212121;
+    margin: 0 0 20px 0;
+}
+.explore_products .title p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(33, 33, 33, 0.7);
+}
+.products_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px 0 0 0;
+}
+.products_list main{
+    width: 76.4%;
+    padding: 0 90px 0 120px;
+}
+.products_list main > .search_list{
+    position: relative;
+    margin: 0 0 50px 0;
+}
+.products_list main > .search_list input:focus{
+    outline: 0;
+}
+.products_list main > .search_list input{
+    display: block;
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(33, 33, 33, 0.7);
+    background: linear-gradient(#FFFFFF 0 0) padding-box,
+                linear-gradient(85.59deg, #34642B 0%, #BCD539 100%) border-box;
+    padding: 17px 75px 17px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.products_list main > .search_list svg{
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    cursor: pointer;
+}
+.products_list main > .brands{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+}
+.products_list main > .brands .cols{
+    max-width: 270px;
+    width: 100%;
+}
+.products_list main > .brands .cols .inner_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+}
+.products_list main > .brands .cols .product_name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #212121;
+}
+.products_list aside{
+    position: sticky;
+    top: 0;
+    height: 950px;
+    width: calc(100% - 76.4%);
+}
+.products_list aside > h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #212121;
+}
+.products_list aside > .brand_list{
+    list-style: none;
+}
+.products_list aside > .brand_list li{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(33, 33, 33, 0.8);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.5);
+    padding: 19px 0;
+}
+.products_list aside > .brand_list li input{
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.products_list aside > .brand_list li input::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(33, 33, 33, 0.8);
+    border-radius: 10px;
+    margin: 0 40px 0 0;
+}
+.products_list aside > .brand_list li input:checked:before{
+    background-image: url(/img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}

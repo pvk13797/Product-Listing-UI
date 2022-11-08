@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 .linear_1 {
     background: linear-gradient(85.59deg, #34642B 0%, #BCD539 100%);
     -webkit-background-clip: text;
@@ -105,6 +108,7 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: space-between;
 }
 .products_list main > .brands .cols{
+    display: none;
     max-width: 270px;
     width: 100%;
 }
@@ -124,6 +128,29 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 20px;
     line-height: 30px;
     color: #212121;
+}
+.products_list main > .brands .view_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.products_list main > .brands .view_more a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    background: #34642B;
+    border: 1px solid #34642B;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.products_list main > .brands .view_more a:hover{
+    background-color: #FFFFFF;
+    color: #34642B;
 }
 .products_list aside{
     position: sticky;

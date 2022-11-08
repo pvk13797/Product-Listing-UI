@@ -12,6 +12,8 @@ $(document).ready(function(){
             }
         })
     });
+
+    // View More
     $('.cols').slice(0, 3).show();
     $('.view_more a').click(function(e){
         e.preventDefault();
